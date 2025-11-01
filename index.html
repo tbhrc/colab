@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colab Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header class="hero">
+        <nav class="nav">
+            <div class="logo">Colab</div>
+            <a class="nav-cta" href="#contact">Get Started</a>
+        </nav>
+        <div class="hero-content">
+            <h1>Collaborate Smarter, Launch Faster</h1>
+            <p>Colab brings your team together with shared tools, real-time insights, and automated workflows that keep projects moving.</p>
+            <div class="hero-actions">
+                <a class="btn primary" href="#contact">Start your free trial</a>
+                <a class="btn secondary" href="#features">See features</a>
+            </div>
+            <div class="hero-stats">
+                <div>
+                    <span class="stat">10k+</span>
+                    <span class="stat-label">Teams onboarded</span>
+                </div>
+                <div>
+                    <span class="stat">4.9/5</span>
+                    <span class="stat-label">Average rating</span>
+                </div>
+                <div>
+                    <span class="stat">99.9%</span>
+                    <span class="stat-label">Uptime guaranteed</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="features" class="section features">
+            <h2>Everything your team needs</h2>
+            <p class="section-intro">Streamline collaboration with integrated tools that are powerful alone and unstoppable together.</p>
+            <div class="grid">
+                <article class="card">
+                    <h3>Unified dashboard</h3>
+                    <p>Keep tasks, documents, and milestones in sync. Visibility for every stakeholder, clarity for every decision.</p>
+                </article>
+                <article class="card">
+                    <h3>Real-time collaboration</h3>
+                    <p>Comment, edit, and brainstorm together. Colab keeps everyone aligned across time zones and devices.</p>
+                </article>
+                <article class="card">
+                    <h3>Automation built-in</h3>
+                    <p>Automate status updates and approvals with powerful workflows that adapt to the way your team works.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section highlight">
+            <div class="highlight-content">
+                <h2>Launch projects with confidence</h2>
+                <p>From kickoff to delivery, Colab helps teams stay focused on the work that matters. Track progress, surface risks early, and celebrate every win.</p>
+                <ul>
+                    <li>Customizable templates to onboard projects in minutes.</li>
+                    <li>Advanced analytics to keep leadership informed.</li>
+                    <li>Secure infrastructure with enterprise-grade compliance.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section testimonials">
+            <h2>Loved by modern teams</h2>
+            <div class="grid">
+                <figure class="card testimonial">
+                    <blockquote>
+                        “Colab gives us the visibility we need to ship features twice as fast. The team feels more connected than ever.”
+                    </blockquote>
+                    <figcaption>
+                        <span class="author">Amelia Clarke</span>
+                        <span class="role">Head of Product, Horizon Apps</span>
+                    </figcaption>
+                </figure>
+                <figure class="card testimonial">
+                    <blockquote>
+                        “Automation with Colab saves us hours each week. We focus on strategy while the busywork takes care of itself.”
+                    </blockquote>
+                    <figcaption>
+                        <span class="author">Raj Patel</span>
+                        <span class="role">Operations Lead, Northwind</span>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="contact" class="section cta">
+            <div class="cta-card">
+                <h2>Ready to transform the way you collaborate?</h2>
+                <p>Start your free 14-day trial today. No credit card required.</p>
+                <form class="cta-form">
+                    <label class="sr-only" for="email">Work email</label>
+                    <input type="email" id="email" name="email" placeholder="you@company.com" required />
+                    <button type="submit" class="btn primary">Get started</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; <span id="year"></span> Colab. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
